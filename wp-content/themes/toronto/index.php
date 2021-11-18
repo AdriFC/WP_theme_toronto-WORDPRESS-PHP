@@ -1,3 +1,3 @@
 <?php
-    echo "Desde la plantilla";
+    echo "Desde la plantilla, index";
 ?>
