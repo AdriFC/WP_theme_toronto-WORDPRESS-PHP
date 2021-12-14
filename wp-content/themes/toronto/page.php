@@ -2,10 +2,17 @@
 
     <?php while(have_posts() ): the_post(); ?>
 
+    <!-- Detectar si hay imagen destacada -->
+    <?php if (has_post_thumbnail()) { ?>
+
         <div class="destacada">
             <?php the_post_thumbnail('destacada'); ?>
             <h2><?php the_title(); ?></h2>
         </div>
+
+    <?php } else { ?>
+        <h2 class="noimagen"><?php the_title(); ?></h2>
+    <?php } ?>
 
         <div id="primary" class="primary">
             <?php the_content(); ?>

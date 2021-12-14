@@ -78,8 +78,16 @@ header nav ul li a {
     bottom: 10px;
     background-color: #a00622;
     padding: 10px 15px;
-    color: #ffffff;
-    
+    color: #ffffff;  
+}
+
+h2.noimagen {
+    color: #a00622;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 1px solid #a00622;
 }
 
 #secondary {
