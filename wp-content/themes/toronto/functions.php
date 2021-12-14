@@ -11,6 +11,12 @@
         'menu_principal' => __('Menu Principal', 'CursoWP Toronto theme')
     ));
 
+    //Agregar opción de imagen destacada al theme
+    add_theme_support('post-thumbnails');
+
+    //Tamaño personalizado de imágenes destacadas
+    add_image_size('destacada', 1100, 418, true);
+
     //Eliminar la barra de administración de WP superior en el front
     add_filter('show_admin_bar', '__return_false');
     
